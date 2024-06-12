@@ -10,7 +10,7 @@ const ListAplikasi = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/api/v1/aplikasi')
+      .get('http://localhost:6543/api/v1/aplikasi')
       .then((response) => {
         setData(response.data.data.aplikasis);
       })
